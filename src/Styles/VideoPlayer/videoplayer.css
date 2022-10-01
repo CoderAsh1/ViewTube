@@ -1,0 +1,44 @@
+.videoplayer {
+  width: calc(100vw - 20rem);
+  margin-left: 20rem;
+  height: 100vh;
+  padding: 6rem 1.5rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .videoplayer {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.videoplayer .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.videoplayer span {
+  font-size: 1.3rem;
+  margin: 1rem 1rem 1rem 0;
+  color: gray;
+}
+.videoplayer .channel {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.videoplayer button {
+  width: 8rem;
+  height: 3rem;
+  background: green;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=videoplayer.css.map */

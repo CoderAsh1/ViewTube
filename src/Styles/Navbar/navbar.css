@@ -1,0 +1,46 @@
+.navbar {
+  position: fixed;
+  height: 5rem;
+  width: 100vw;
+  background: rgb(43, 42, 42);
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar h5 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.7rem;
+}
+.navbar form {
+  display: flex;
+  align-items: center;
+  background: white;
+  color: black;
+  font-size: 2.2rem;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+.navbar form input {
+  height: 3rem;
+  width: 19rem;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+@media screen and (max-width: 900px) {
+  .navbar form input {
+    width: 14rem;
+  }
+}
+.navbar form .bisearch {
+  cursor: pointer;
+  color: gray;
+}
+.navbar form .bisearch:hover {
+  color: #000;
+}/*# sourceMappingURL=navbar.css.map */

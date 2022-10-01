@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+html {
+  font-size: 10px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+Link {
+  text-decoration: none;
+  color: white;
+}

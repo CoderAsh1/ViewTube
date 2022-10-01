@@ -1,0 +1,21 @@
+.searchContent {
+  width: calc(100vw - 22rem);
+  margin-left: 20rem;
+  padding: 6rem 0;
+  justify-content: center;
+  color: rgb(228, 26, 26);
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  .searchContent {
+    margin-left: 0;
+    padding-top: 12rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.searchContent .spinner {
+  border-radius: 50%;
+  padding: 1rem;
+}/*# sourceMappingURL=search.css.map */
