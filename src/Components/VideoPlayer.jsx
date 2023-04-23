@@ -10,6 +10,7 @@ const VideoFeed = () => {
   const { videoId } = useParams();
   const [video, setVideo] = useState(null);
   const [link, setLink] = useState(null);
+  const [audioLink, setAudioLink] = useState(null);
 
   async function fetchData() {
     let newdata = await fetch(videoId);
@@ -19,7 +20,7 @@ const VideoFeed = () => {
   async function fetchLink() {
     let newLink = await fetchDownloadLink(videoId);
     setLink(newLink.data.videos.items[1].url);
-    // console.log(newLink.data.videos.items);
+    setAudioLink(newLink.data.audios.items[0].url);
   }
 
   function handleDownload() {
@@ -51,6 +52,7 @@ const VideoFeed = () => {
               <span>{video.statistics.likeCount} likes</span>
             </div>
             <button onClick={handleDownload}>Download</button>
+            <button onClick={() => saveAs(audioLink)}>Download audio</button>
           </div>
         </>
       )}
